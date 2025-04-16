@@ -1,6 +1,6 @@
 import { initializeApp } from "firebase/app";
-import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
+import { getAuth } from "firebase/auth"; 
 
 // Configuración de Firebase
 const firebaseConfig = {
@@ -12,9 +12,9 @@ const firebaseConfig = {
   appId: "1:1038679495600:web:7d9a253157a011b1c8fc75"
 };
 
-// Inicializa Firebase
+// Inicializar Firebase
 const app = initializeApp(firebaseConfig);
-const auth = getAuth(app);
+const auth = getAuth(app); // 🔹 Sin persistencia de sesión
 const db = getFirestore(app);
 
 // ✅ Exporta correctamente los módulos
